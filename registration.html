@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParseIT - Administration</title>
+    <link rel="stylesheet" href="registration.css" />
+    <script type="module" src="registration.js"></script>
+  </head>
+  <body>
+    <div id="div_signup_container">
+      <div id="header_signup_container">
+        <img src="assets/images/icons/parseit_logo.png" id="parseit_logo" />
+        <button id="signinasuser_btn">Sign In</button>
+      </div>
+      <div id="subheader_signup_container">
+        <label id="admin_subheader_lbl">Sign Up</label>
+        <label id="tagline_lbl">Let's set you up, Parsers!</label>
+      </div>
+      <div id="form_signup_container">
+        <div id="username_container">
+          <input id="username_txt" placeholder="Enter ID" />
+          <img
+            src="assets/images/icons/user-icon-reg.png"
+            id="user_status_icon"
+          />
+        </div>
+        <div id="password_container">
+          <input id="email_txt" placeholder="Enter Email Address" />
+          <img
+            src="assets/images/icons/user-icon-reg.png"
+            id="user_status_icon"
+          />
+        </div>
+        <div id="signup_button_container">
+          <button class="next_btn" id="next_btn">→</button>
+        </div>
+      </div>
+      <div id="footer_signup_container">
+        <a
+          href="#"
+          onclick="alert('This feature is yet to be added.')"
+          id="forgotpassword_link"
+          >Change Email Address</a
+        >
+        <img
+          src="assets/images/icons/forgot-password-icon.png"
+          id="forgotpassword_icon"
+        />
+      </div>
+    </div>
+    <div id="div_verify_container">
+      <div id="header_signup_container">
+        <img src="assets/images/icons/parseit_logo.png" id="parseit_logo" />
+        <button id="cancel_btn">Cancel</button>
+      </div>
+      <div id="subheader_verify_container">
+        <label id="admin_subheader_lbl">Verify</label>
+        <label id="tagline_lbl">Confirm you are</label>
+        <label id="current_confirm_email"></label>
+      </div>
+      <div id="form_verify_container">
+        <label id="instruction_lbl"
+          >We sent a verification code to <br />
+          <a id="current_verify_email">[Email]</a></label
+        >
+        <div id="password_container">
+          <img src="assets/images/icons/password-icon-reg.png" id="user_icon" />
+          <input id="verification_txt" placeholder="Enter Verification Code" />
+          <img
+            src="assets/images/icons/user-icon-reg.png"
+            id="user_status_icon"
+          />
+        </div>
+        <div id="signup_button_container">
+          <button class="next_btn" id="next1_btn">→</button>
+        </div>
+      </div>
+      <div id="footer_signup_container">
+        <a href="https://youtube.com" id="forgotpassword_link"
+          >Change Email Address</a
+        >
+        <img
+          src="assets/images/icons/forgot-password-icon-black.png"
+          id="forgotpassword_icon"
+        />
+      </div>
+    </div>
+    <div id="div_fillout_container">
+      <div class="createbox">
+        <div class="header">
+          <h1>Create Account</h1>
+          <div class="steps-container">
+            <div class="steps">
+              <div class="step" id="step1_circle">1</div>
+              <div class="line"></div>
+              <div class="step" id="step2_circle">2</div>
+              <div class="line"></div>
+              <div class="step" id="step3_circle">3</div>
+              <div class="line"></div>
+              <div class="step" id="step4_circle">4</div>
+              <div class="line"></div>
+              <div class="step" id="step5_circle">5</div>
+            </div>
+          </div>
+        </div>
+        <form id="create-account-form">
+          <div class="step-container1" id="step1_cont">
+            <div class="input-group">
+              <div class="input-wrapper">
+                <input
+                  id="txtfirstname"
+                  type="text"
+                  placeholder="Enter First Name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtmidname"
+                  type="text"
+                  placeholder="Enter Middle Name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtlastname"
+                  type="text"
+                  placeholder="Enter Last Name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtsuffixname"
+                  type="text"
+                  placeholder="Enter Suffix"
+                />
+              </div>
+            </div>
+
+            <!-- <button class="nextbutton">→</button> -->
+            <button id="step1_btn" class="next_btn">→</button>
+          </div>
+          <div class="step-container2" id="step2_cont" style="display: none">
+            <div class="input-group">
+              <div class="input-wrapper">
+                <input
+                  id="txtbirthmonth"
+                  type="text"
+                  placeholder="Enter Birth Month"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtbirthday"
+                  type="text"
+                  placeholder="Enter Birth Day"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtbirthyear"
+                  type="text"
+                  placeholder="Enter Birth Year"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="txtcontact"
+                  type="text"
+                  placeholder="Enter Contact No."
+                />
+              </div>
+            </div>
+            <button id="step2_btn" class="next_btn">→</button>
+          </div>
+          <div class="step-container3" id="step3_cont">
+            <div class="input-group">
+              <h4>What people should call you?</h4>
+              <div class="input-wrapper">
+                <input
+                  id="txtusername"
+                  type="text"
+                  placeholder="Enter Username"
+                />
+              </div>
+            </div>
+            <button id="step3_btn" class="next_btn">→</button>
+          </div>
+          <div class="step-container4" id="step4_cont">
+            <div class="input-group">
+              <h1></h1>
+              <div class="input-wrapper">
+                <input
+                  id="txtpassword"
+                  type="text"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Confirm Password"
+                  id="txtconfirmpass"
+                />
+              </div>
+            </div>
+
+            <button id="step4_btn" class="next_btn">→</button>
+          </div>
+
+          <!-- Step 5: Confirm Details -->
+          <div class="step-container5" id="step5_cont">
+            <h4>Confirm Details</h4>
+            <p>ID:<span id="confirm-id"></span></p>
+            <p>Email: <span id="confirm-email"></span></p>
+            <p>Name:<span id="confirm-name"></span></p>
+            <p>Birthday:<span id="confirm-birthday"></span></p>
+            <p>Age: <span id="confirm-age"></span></p>
+            <p>Username: <span id="confirm-username"></span></p>
+
+            <div class="button-group">
+              <button id="editdetails_btn" class="prev-step">
+                ← Edit Details
+              </button>
+              <button id="step5_btn" class="next_btn">→</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- <input id="fullname_txt" placeholder="Enter Full Name">
+    <br>
+    <input id="birthday_txt" placeholder="Enter Birthday">
+    <br>
+    <input id="username1_txt" placeholder="Enter Username">
+    <br>
+    <input id="password1_txt" placeholder="Enter Password">
+    <br> -->
+      <!-- <button class="next_btn" id="next2_btn">→</button>  -->
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="registration_events.js"></script>
+  </body>
+</html>

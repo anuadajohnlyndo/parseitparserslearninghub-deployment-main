@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(assets/fonts/Inter-Regular.otf);
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(assets/fonts/Inter-Medium.otf);
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(assets/fonts/Inter-Light.otf);
+}
+
+* {
+  font-family: Inter-Regular;
+  font-size: 14px;
+  color: #2e3845;
+}
+
+/* BUTTONS */
+#signupasuser_btn {
+  border: none;
+  background-color: #007aff;
+  height: 30px;
+  width: 70px;
+  border-radius: 40px;
+  color: #fefefe;
+  margin-right: 30px;
+  font-size: 13px;
+  z-index: 1;
+}
+
+#signin_btn {
+  margin-top: 15px;
+  background: #eb3434;
+  border-radius: 8px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  height: 50px;
+  /* change button height */
+  transform-style: preserve-3d;
+  transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 80%;
+}
+
+#signin_btn::before {
+  background: #b02828;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b02828, 0 0.6em 0 0 rgba(#b02828, 0.6);
+  content: "";
+  height: 98%;
+  /* change shadow height */
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+}
+
+#signin_btn:active {
+  background: #eb3434;
+  transform: translate(0, 0.75em);
+}
+
+#signin_btn:active::before {
+  box-shadow: 0 0 0 3px #eb3434, 0 0 #eb3434;
+  transform: translate3d(0, 0, -1em);
+}
+
+/* TEXTBOXES */
+#username_txt,
+#password_txt {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  padding-left: 15px;
+  color: #2e3845;
+}
+
+#username_txt:focus,
+#password_txt:focus {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ICONS/IMAGES */
+#parseit_logo {
+  width: 30px;
+  margin-left: 35px;
+}
+
+#user_icon {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin: 10px;
+}
+
+#user_status_icon {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  margin: 10px;
+  visibility: hidden;
+}
+
+#forgotpassword_icon {
+  width: 9px;
+  height: 9px;
+  aspect-ratio: 1/2;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+/* LABELS */
+#admin_subheader_lbl {
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 46px;
+  font-family: Inter-Medium;
+  color: #000000;
+}
+
+#tagline_lbl {
+  margin-left: 30px;
+  font-size: 22px;
+  font-family: Inter-Light;
+  color: #2e3845;
+}
+
+/* LINKS */
+
+#forgotpassword_link {
+  color: #2e3845;
+  font-size: 12px;
+}
+
+/* MAIN */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div_signin_container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+  background-image: url(assets/images/background_images/ctu_argao_banner_600px.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#header_signin_container {
+  margin: 0;
+  padding: 0;
+  height: 10%;
+  width: 100%;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#subheader_signin_container {
+  margin: 0;
+  padding: 0;
+  height: 30%;
+  width: 100%;
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  margin-top: -70px;
+}
+
+#form_signin_container {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  height: 40%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#username_container {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  height: 50px;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#password_container {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  height: 50px;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#signin_button_container {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fbfbfb;
+  margin: 50% auto;
+  padding: 5px 5px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  /* width: 60%; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.close {
+  color: #aaa;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer_signin_container {
+  margin: 0;
+  padding: 0;
+  height: 20%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: orange;
+  }
+
+  .login-box {
+    width: 300px;
+    margin-top: 60px;
+  }
+}
+
+/* For screen widths 768px and up */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+
+  .login-box {
+    width: 300px;
+    margin-top: 60px;
+    left: -20%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .next-icon-button {
+    font-size: 16px;
+  }
+}

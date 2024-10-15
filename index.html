@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsers - Signin</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="menu_container">
+        <button id="menu_btn">
+          <img src="assets/images/icons/menu-icon-reg.png" class="menu_icon" />
+          <a class="menuset_lbl" id="menuset_lbl">Lobby</a>
+        </button>
+      </div>
+      <div id="home_container">
+        <div id="search_container">
+          <img
+            src="Assets/Images/Icons/search-icon-black.png"
+            class="search_icon"
+          />
+          <input id="search_input" placeholder="Search" />
+        </div>
+        <button id="announcement_container">
+          <div class="xdate">
+            <a id="date_announcement_lbl"></a>
+            <a id="time_announcement_lbl"></a>
+          </div>
+          <div class="xannounce">
+            <a id="announcement_lbl"></a>
+          </div>
+        </button>
+        <div class="main_home_container">
+          <div id="homelobby_container" class="mainhome_sector">
+            <div class="subjects_container">
+              <div class="subject_list" id="subject_list">
+                <!-- <label id="currentstatus">Semester is yet to start.</label> -->
+              </div>
+            </div>
+          </div>
+          <div id="homegame_container" class="mainhome_sector">
+            <button id="btn_game1">
+              <img class="img_game1icon" src="game_assets/gg.jpeg" />Quiz Game
+            </button>
+          </div>
+          <div id="homeyt_container" class="mainhome_sector">
+            <div class="yttop" id="yttop" style="display: none">
+              <button id="btn_yttop" class="yttop_btns">
+                <img
+                  class="yt_icons"
+                  src="assets/images/Icons/home-outline.svg"
+                />
+                <a>Home</a>
+              </button>
+
+              <button
+                id=""
+                class="yttop_btns"
+                onclick="alert('This feature is yet to be added.')"
+              >
+                <img
+                  class="yt_icons"
+                  src="assets/images/Icons/bookmark-outline.svg"
+                />
+                <a>Save</a>
+              </button>
+
+              <button
+                id=""
+                class="yttop_btns"
+                onclick="alert('This feature is yet to be added.')"
+              >
+                <img
+                  class="yt_icons"
+                  src="assets/images/Icons/mail-outline.svg"
+                />
+                <a>Request</a>
+              </button>
+            </div>
+            <div class="ytbot" id="ytbot">
+              <div class="ytframe">
+                <div class="ytlist" id="ytlist">
+                  <button id="ytlist1_btn">
+                    <img
+                      class="yt1_thumb"
+                      src="https://img.youtube.com/vi/wm630HvedqI/hqdefault.jpg"
+                      alt="YouTube Video Thumbnail"
+                    />
+                    <a class="yt1_thumblbl">CTU Argao Promotinal Video</a>
+                  </button>
+
+                  <button id="ytlist2_btn">
+                    <img
+                      class="yt1_thumb"
+                      src="https://img.youtube.com/vi/zrycG5hxhjw/hqdefault.jpg"
+                      alt="YouTube Video Thumbnail"
+                    />
+                    <a class="yt1_thumblbl"
+                      >They Made a MISTAKE With This Unit... (Xilonen C0
+                      Ultimate Guide & Review)</a
+                    >
+                  </button>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                  <div class="test1"></div>
+                </div>
+                <div class="ytview" id="ytview" style="display: none">
+                  <iframe
+                    id="ytview_main"
+                    width="100%"
+                    height="auto"
+                    title="YouTube video player"
+                    frameborder="0"
+                    class="yt_frame"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  >
+                  </iframe>
+                  <label id="ytview_mainlbl" class="yttitle_lbl"
+                    >They Made a MISTAKE With This Unit... (Xilonen C0 Ultimate
+                    Guide & Review)</label
+                  >
+                  <div class="ytlike_section">
+                    <button
+                      id=""
+                      class="ytlike_button"
+                      onclick="alert('This feature is yet to be added.')"
+                    >
+                      <img
+                        class="ytlike_img"
+                        src="assets/images/Icons/heart-outline.svg"
+                      />Like
+                    </button>
+                    <button
+                      id=""
+                      class="ytlike_button"
+                      onclick="alert('This feature is yet to be added.')"
+                    >
+                      <img
+                        class="ytlike_img"
+                        src="assets/images/Icons/bookmark-outline.svg"
+                      />Save
+                    </button>
+                  </div>
+                  <div class="ytcomment"><a>Other Recommended Videos</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="homedeans_container" class="mainhome_sector">
+            <a>Dean's Lister</a>
+          </div>
+          <div id="homeannounce_container" class="mainhome_sector">
+            <!-- Form to submit announcement data -->
+            <form id="announcementForm">
+              <label for="authorname">Author:</label>
+              <input
+                type="text"
+                id="authorname"
+                name="authorname"
+                required
+              /><br /><br />
+
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required /><br /><br />
+
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required /><br /><br />
+
+              <label for="header">Title:</label>
+              <input
+                type="text"
+                id="header"
+                name="header"
+                required
+              /><br /><br />
+
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" required></textarea
+              ><br /><br />
+              <label>Background: </label>
+              <input id="backgroundimg_announcement" />
+              <button id="btn_announcesubmit" type="submit">
+                Submit Announcement
+              </button>
+            </form>
+          </div>
+          <div id="homechatgpt_container" class="mainhome_sector">
+            <a>ChatGPT</a>
+          </div>
+        </div>
+      </div>
+      <div id="navbar_container">
+        <button class="navbtn_icons" id="lobby_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/ParseRoom-1.png"
+            id="navlobby"
+          />
+          <a class="navbtn_lbl">Lobby</a>
+        </button>
+        <button class="navbtn_icons" id="game_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/Game-1.png"
+            id="navgame"
+          />
+          <a class="navbtn_lbl">Gaming</a>
+        </button>
+        <button class="navbtn_icons" id="yt_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/YouTube-1.png"
+            id="navyt"
+          />
+          <a class="navbtn_lbl">YT Library</a>
+        </button>
+        <button class="navbtn_icons" id="deans_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/Medal-1.png"
+            id="navdeans"
+          />
+          <a class="navbtn_lbl">Dean's Listers</a>
+        </button>
+        <button class="navbtn_icons" id="announce_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/Announce-1.png"
+            id="navannounce"
+          />
+          <a class="navbtn_lbl">Announce</a>
+        </button>
+        <button class="navbtn_icons" id="chatgpt_btn">
+          <img
+            class="navbtn_icons"
+            src="Assets/Images/Icons/ChatGPT-1.png"
+            id="navchatgpt"
+          />
+          <a class="navbtn_lbl">ChatGPT</a>
+        </button>
+      </div>
+    </div>
+    <div id="sidebar_container">
+      <div class="top_sidebar">
+        <a class="menuset_lbl menu_lbl">Menu</a>
+        <div class="top">
+          <button id="closemenu_btn">
+            <img
+              class="closeimgbtn"
+              src="assets/images/Icons/close-outline.svg"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="mid_sidebar">
+        <button id="parseroom" class="mid_options top_mid">ParseRoom</button>
+        <button
+          id="community"
+          class="mid_options"
+          onclick="alert('This feature is yet to be added.')"
+        >
+          Community
+        </button>
+        <button
+          id="settings"
+          class="mid_options"
+          onclick="alert('This feature is yet to be added.')"
+        >
+          Settings
+        </button>
+      </div>
+      <div class="bot_sidebar">
+        <button id="signout_btn">
+          <img
+            class="closeimgbtn"
+            src="assets/images/Icons/log-out-outline.svg"
+          />
+        </button>
+      </div>
+    </div>
+    <div id="events_container">
+      <button id="closeevents_btn">Close</button>
+      <div class="allannouncements" id="allannouncement"></div>
+    </div>
+  </body>
+  <script src="index_events.js"></script>
+</html>

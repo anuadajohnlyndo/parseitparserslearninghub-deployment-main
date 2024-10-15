@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParseIT - Main</title>
+    <link rel="stylesheet" href="authentication.css" />
+    <script type="module" src="authentication.js"></script>
+  </head>
+  <body>
+    <div id="div_signin_container">
+      <div id="header_signin_container">
+        <img src="assets/images/icons/parseit_logo.png" id="parseit_logo" />
+        <button id="signupasuser_btn">Sign Up</button>
+      </div>
+      <div id="subheader_signin_container">
+        <label id="admin_subheader_lbl">Sign In</label>
+        <label id="tagline_lbl">Welcome, Parser!</label>
+      </div>
+      <div id="form_signin_container">
+        <!-- <div id="credentials_mismatch_error">Credentials Mismatch</div> -->
+        <div id="username_container">
+          <input id="username_txt" placeholder="Enter Email Address" />
+          <img
+            src="assets/images/icons/user-icon-reg.png"
+            id="user_status_icon"
+          />
+        </div>
+        <!-- <div id="email_error_message">Enter a valid email</div> -->
+        <div id="password_container">
+          <input id="password_txt" placeholder="Enter Password" />
+          <img
+            src="assets/images/icons/user-icon-reg.png"
+            id="user_status_icon"
+          />
+        </div>
+        <!-- <div id="password_error_message">Enter a valid password</div> -->
+        <div id="signin_button_container">
+          <button id="signin_btn">Sign In</button>
+        </div>
+      </div>
+      <div id="footer_signin_container">
+        <a
+          href="#"
+          onclick="alert('This feature is yet to be added.')"
+          id="forgotpassword_link"
+          >Forgot Password</a
+        >
+        <img
+          src="assets/images/icons/forgot-password-icon-black.png"
+          id="forgotpassword_icon"
+        />
+      </div>
+    </div>
+    <!-- <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <div id="errorMessage"></div>
+        <span id="closeModal" class="close">&times;</span>
+      </div>
+    </div> -->
+    <script src="authentication_events.js"></script>
+  </body>
+</html>
